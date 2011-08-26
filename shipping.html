@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--	This document was successfully validated
+					as XHTML 1.0 Strict using the W3C Validator . -->			
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Purchase Requisition - Shipping | Company Name Here</title>
+
+	<link rel="stylesheet" type="text/css" href="screen.css">
+
+	<!-- jQuery used for demonstration purposes -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	
+	$(function() {
+		$( "#close" ).click(function() {
+				window.parent.$('#dialog').dialog('close');
+		});
+	});
+	
+	</script>
+	<!-- end demonstration jQuery -->
+	
+        <!-- IE6 PNG Fix -->
+        <!--[if IE 6]>
+          <style type="text/css">
+            #logo { behavior: url(iepngfix.htc) }
+          </style>
+        <![endif]-->
+</head>
+
+<body>
+
+<!-- Content container -->
+<div id="container">
+
+	<!-- The header at the top of the container -->
+	<div id="cont_header">
+		<img src="images/yourLogo194.png" id="logo" width="194" height="67" alt="Company Name Here" />
+		<!-- Upper-right corner requisition navigation -->
+		<ul id="navigation">
+			<li>
+				<a href="details.html" title="Details">Details</a>
+			</li>
+			<li>
+				<a href="lines.html" title="Requisition Lines">Requisition Lines</a>
+			</li>
+			<li>
+				<a href="billing.html" title="Billing">Billing</a>
+			</li>
+			<li class="active">
+			<a href="shipping.html" title="Shipping">Shipping</a>
+			</li>
+		</ul>
+	</div><!-- end div#cont_header -->
+	
+	<!-- Wrapper around the content -->
+	<div id="content">
+
+		<!-- This is the heading, print and close buttons -->
+		<h1>Purchase Requisition - <span>Shipping</span></h1>
+		<ul id="controls">
+			<li>
+				<a href="#" id="print" title="Print">Print</a>
+			</li>
+			<li>
+				<a href="#" id="close" title="Close">Close</a>
+			</li>
+		</ul>
+	
+		<!-- Billing Information -->
+                <ul class="shipping_billing">
+                  <li class="label">
+                    <span>Ship To:</span>
+                    <ul>
+                      <li class="title">OfficeHQ</li>
+                      <li>
+                        Company Name OfficeHQ<br />
+                        123 Null Street<br />
+                        San Francisco, California 94112<br />
+                        US
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="label">
+                    <span>Attn:</span>
+                    <ul>
+                      <li>Jane Doe</li>
+                    </ul>
+                  </li>
+                </ul>
+                
+	</div><!-- end div#content -->
+	
+</div><!-- end div#container -->
+
+</body>
+
+</html>

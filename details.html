@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--	This document was successfully validated
+					as XHTML 1.0 Strict using the W3C Validator . -->			
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Purchase Requisition - Details | Company Name Here</title>
+
+	<link rel="stylesheet" type="text/css" href="screen.css">
+
+	<!-- jQuery used for demonstration purposes -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	
+	$(function() {
+		$( "#close	" ).click(function() {
+				window.parent.$('#dialog').dialog('close');
+		});
+	});
+	
+	</script>
+	<!-- end demonstration jQuery -->
+        
+        <!-- IE6 PNG Fix -->
+        <!--[if IE 6]>
+          <style type="text/css">
+            #logo { behavior: url(iepngfix.htc) }
+          </style>
+        <![endif]-->
+	
+</head>
+
+<body>
+
+<!-- Content container -->
+<div id="container">
+
+	<!-- The header at the top of the container -->
+	<div id="cont_header">
+		<img src="images/yourLogo194.png" id="logo" width="194" height="67" alt="Company Name Here" />
+		<!-- Upper-right corner requisition navigation -->
+		<ul id="navigation">
+			<li class="active">
+				<a href="details.html" title="Details">Details</a>
+			</li>
+			<li>
+				<a href="lines.html" title="Requisition Lines">Requisition Lines</a>
+			</li>
+			<li>
+				<a href="billing.html" title="Billing">Billing</a>
+			</li>
+			<li>
+			<a href="shipping.html" title="Shipping">Shipping</a>
+			</li>
+		</ul>
+	</div><!-- end div#cont_header -->
+	
+	<!-- Wrapper around the content -->
+	<div id="content">
+
+		<!-- This is the heading, print and close buttons -->
+		<h1>Purchase Requisition - <span>Details</span></h1>
+		<ul id="controls">
+			<li>
+				<a href="#" id="print" title="Print">Print</a>
+			</li>
+			<li>
+				<a href="#" id="close" title="Close">Close</a>
+			</li>
+		</ul>
+	
+		<!-- This is the form -->
+		<div id="form_holder">
+			<form id="details" action="#" method="POST">
+				<ul id="input_wrapper">
+					<li class="left">
+						<ul class="form_fields">
+							<li>
+								<label for="req_no">Requisition No.</label>
+								<p><strong>10910</strong></p>
+							</li>
+							<li>
+								<label for="status">Status:</label>
+								<p><i>CLOSE</i></p>
+							</li>
+							<li>
+								<label for="priority">Priority:</label>
+								<select name="priority">
+									<option>1 - Low Priority</option>
+									<option SELECTED>2 - Medium Priority</option>
+									<option>3 - High Priority</option>
+								</select>
+							</li>
+							<li>
+								<label for="business_unit">Business Unit:</label>
+									<select name="business_unit">
+										<option>5543 - Art Resources</option>
+									</select>
+							</li>
+							<li>
+								<label for="description">Description:</label>
+								<textarea cols="22" rows="3" name="description"></textarea>
+							</li>
+						</ul><!-- ul.form_fields -->
+					</li><!-- li.left -->
+					<li class="right">
+						<ul class="form_fields">
+							<li>
+								<label for="order_date">Order Date:</label>
+								<p>07/10/2008</p>
+							</li>
+							<li>
+								<label for="in_workflow">In Workflow?</label>
+								<input type="checkbox" name="in_workflow" />
+							</li>
+							<li>
+								<label for="request_by">Request By:</label>
+								<p>USERNAME</p>
+							</li>
+							<li>
+								<label for="supervisor">Supervisor:</label>
+								<input type="text" name="supervisor" />
+							</li>
+							<li>
+								<label for="required_date">Required By:</label>
+								<input type="text" name="required_date" value="07/15/2008" />
+								<a href="#" id="date_picker" title="Select A Date">Select Date</a>
+							</li>
+						</ul><!-- ul.form_fields -->
+					</li><!-- li.right -->
+				</ul><!-- end ul#input_wrapper -->
+			</form><!-- end form#details -->
+		</div><!-- end div#form_holder -->
+	
+		<!-- This is the lower panel, with vendor information -->
+		<div id="vendor_panel">
+			<ul id="info">
+				<li id="info_left">
+					<ul>
+						<li class="label">Vendor</li>
+						<li>
+							VENDOR NAME HERE<br />
+							PO BOX 123<br />
+							LONG BEACH, CA 90801
+						</li>
+					</ul>
+				</li><!-- end li#info_left -->
+				<li id="info_right">
+					<ul>
+						<li class="label">Phone</li>
+						<li>562-000-0000</li>
+						<li class="label">Fax</li>
+						<li>000-000-0000</li>
+					</ul>
+				</li><!-- end li#info_right -->
+			</ul><!-- end ul#info -->
+		</div><!-- end div#vendor_panel -->
+	
+	</div><!-- end div#content -->
+	
+</div><!-- end div#container -->
+
+</body>
+
+</html>

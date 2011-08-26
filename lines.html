@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--	This document was successfully validated
+					as XHTML 1.0 Strict using the W3C Validator . -->			
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Purchase Requisition - Requisition Lines | Company Name Here</title>
+
+	<link rel="stylesheet" type="text/css" href="screen.css">
+
+	<!-- jQuery used for demonstration purposes -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	
+	$(function() {
+		$( "#close	" ).click(function() {
+				window.parent.$('#dialog').dialog('close');
+		});
+	});
+	
+	</script>
+	<!-- end demonstration jQuery -->
+        
+        <!-- IE6 PNG Fix -->
+        <!--[if IE 6]>
+          <style type="text/css">
+            #logo { behavior: url(iepngfix.htc) }
+          </style>
+        <![endif]-->
+</head>
+
+<body>
+
+<!-- Content container -->
+<div id="container">
+
+	<!-- The header at the top of the container -->
+	<div id="cont_header">
+		<img src="images/yourLogo194.png" id="logo" width="194" height="67" alt="Company Name Here" />
+		<!-- Upper-right corner requisition navigation -->
+		<ul id="navigation">
+			<li>
+				<a href="details.html" title="Details">Details</a>
+			</li>
+			<li class="active">
+				<a href="lines.html" title="Requisition Lines">Requisition Lines</a>
+			</li>
+			<li>
+				<a href="billing.html" title="Billing">Billing</a>
+			</li>
+			<li>
+			<a href="shipping.html" title="Shipping">Shipping</a>
+			</li>
+		</ul>
+	</div><!-- end div#cont_header -->
+	
+	<!-- Wrapper around the content -->
+	<div id="content">
+
+		<!-- This is the heading, print and close buttons -->
+		<h1>Purchase Requisition - <span>Requisition Lines</span></h1>
+		<ul id="controls">
+			<li>
+				<a href="#" id="print" title="Print">Print</a>
+			</li>
+			<li>
+				<a href="#" id="close" title="Close">Close</a>
+			</li>
+		</ul>
+	
+		<!-- This is the requisition lines table -->
+			<table class="full">
+			
+			<thead>
+				<th>Line</th>
+				<th>Item</th>
+				<th>Description</th>
+				<th>Qty</th>
+				<th>UOM</th>
+				<th>Conversion</th>
+				<th>Unit Cost</th>
+				<th>Line Total</th>
+			</thead>
+			
+			<tbody>
+			
+				<tr>
+					<td>13311</td><!-- Line -->
+					<td>&nbsp;</td><!-- Item -->
+					<td>Short product description here.</td><!-- Description -->
+					<td>3.00</td><!-- Qty -->
+					<td>EACH</td><!-- UOM -->
+					<td>1.00</td><!-- Conversion -->
+					<td>122.00</td><!-- Unit Cost -->
+					<td>366.00</td><!-- Line Total -->
+				</tr>
+				<tr>
+					<td>13312</td><!-- Line -->
+					<td>&nbsp;</td><!-- Item -->
+					<td>Yet another short product description.</td><!-- Description -->
+					<td>2.00</td><!-- Qty -->
+					<td>EACH</td><!-- UOM -->
+					<td>1.00</td><!-- Conversion -->
+					<td>14.83</td><!-- Unit Cost -->
+					<td>29.66</td><!-- Line Total -->
+				</tr>
+
+			</tbody>
+			
+			</table>
+	
+	
+	</div><!-- end div#content -->
+	
+</div><!-- end div#container -->
+
+</body>
+
+</html>

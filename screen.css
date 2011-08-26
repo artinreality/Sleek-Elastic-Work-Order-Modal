@@ -1,0 +1,312 @@
+body
+{
+	background:url(images/texture-paisley.png) repeat;
+	color:#fff;
+	font-family:Arial, sans-serif;
+	font-size:13px;
+	padding:24px;
+}
+
+label,ul#navigation,h1,h2,h3
+{
+	font-family:Garamond, serif;
+}
+
+a
+{
+	color:#f3cb8d;
+	text-decoration:none;
+}
+
+div#container
+{
+	background:url(images/texture-paisley_light.jpg) repeat;
+	border-bottom:1px solid #989898;
+        border-right: 1px solid #444;
+        border-left: 1px solid #444;
+	height:auto;
+	margin:0 auto;
+	max-width:947px;
+	min-width:748px;
+	overflow:hidden;
+	padding-bottom:1px;
+}
+
+#cont_header
+{
+	background:#141414;
+	border-top:1px solid #710606;
+	clear:both; /* Why is this here? -CV */
+	height:34px;
+	width:100%;
+}
+
+#cont_header #logo
+{
+	z-index:100;
+        position: absolute;
+}
+
+ul#navigation
+{
+	float:right;
+	height:100%;
+	list-style:none;
+	margin:0;
+	overflow:hidden;
+	width:464px;
+}
+
+ul#navigation li
+{
+	float:left;
+	font-size:14px;
+	font-weight:700;
+	line-height:34px;
+	padding:0 24px;
+}
+
+ul#navigation .active
+{
+	background:#222;
+}
+
+ul#navigation a
+{
+	color:#fff;
+}
+
+ul#navigation a:hover
+{
+	color:#f3cb8d;
+}
+
+div#content
+{
+	height:auto;
+	margin:32px auto;
+	max-width:853px;
+}
+
+#content h1
+{
+	font-size:24px;
+	margin-bottom:24px;
+	text-align:center;
+}
+
+h1 span
+{
+	color:#f3cb8d;
+}
+
+ul#controls
+{
+	height:27px;
+	list-style:none;
+	margin:0 auto 32px;
+	padding:0;
+	width:188px;
+}
+
+ul#controls li
+{
+	float:left;
+	height:27px;
+	line-height:27px;
+	margin:0 4px;
+	padding:0;
+	width:76px;
+}
+
+#controls a
+{
+	display:block;
+	height:27px;
+	text-indent:-9999px;
+	width:76px;
+}
+
+#controls #print
+{
+	background:url(images/sprite-controls.png) 76px 0;
+}
+
+#controls #print:hover
+{
+	background:url(images/sprite-controls.png) 76px 27px;
+}
+
+#controls #close
+{
+	background:url(images/sprite-controls.png) 0 0;
+}
+
+#controls #close:hover
+{
+	background:url(images/sprite-controls.png) 0 27px;
+}
+
+#form_holder
+{
+	margin:0 auto;
+	padding:0;
+	width:650px;
+}
+
+#input_wrapper
+{
+	margin:0;
+	overflow:hidden;
+	padding:0;
+}
+
+#input_wrapper .left,#input_wrapper .right
+{
+	height:100%;
+	list-style:none;
+	margin:0;
+	padding:0;
+	width:49.5%;
+}
+
+#input_wrapper .left
+{
+	float:left;
+}
+
+#input_wrapper .right
+{
+	float:right;
+}
+
+.form_fields
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.form_fields label
+{
+	clear:left;
+	color:#f3cb8d;
+	display:inline;
+	font-size:14px;
+	font-weight:700;
+	line-height:32px;
+	margin-right:8px;
+	position:relative;
+}
+
+.form_fields li
+{
+	min-height:42px;
+}
+
+.form_fields p
+{
+	display:inline;
+	line-height:32px;
+	width:110px;
+}
+
+a#date_picker
+{
+	background:url(images/icnDate.gif) no-repeat;
+	display:inline-block;
+	height:0!important;
+	overflow:hidden;
+	padding:16px 0 0;
+	text-indent:-9999px;
+	width:16px;
+}
+
+div#vendor_panel
+{
+	background:#CCC;
+	border-radius:18px;
+	color:#333;
+	height:119px;
+	margin:32px auto;
+	width:80%;
+}
+
+#vendor_panel ul#info
+{
+	height:65px;
+	list-style:none;
+	margin:24px auto;
+	padding:24px;
+	width:460px;
+}
+
+#content table.full
+{
+	width:100%;
+}
+
+table.full thead
+{
+	background:#141414;
+	color:#f3cb8d;
+}
+
+table.full tr
+{
+	line-height:2em;
+	text-align:center;
+}
+
+#content ul.shipping_billing
+{
+        width: 45%;
+        margin: 0 auto;
+        list-style: none;
+}
+
+ul.shipping_billing li {
+  margin: 12px 0;
+}
+
+li.label span {
+  font-weight: bold;
+  float: left;
+  display: inline;
+  color: #f3cb8d;
+}
+
+.shipping_billing .title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+li.label ul {
+  list-style: none;
+  clear: both;
+}
+
+#info_left
+{
+	float:left;
+	margin: 0 8px;
+	width:auto;
+}
+
+#info_right
+{
+	float:left;
+	width:155px;
+}
+
+#info_left li.label,#info_right li.label
+{
+	font-weight:700;
+	margin-left:-24px;
+}
+
+#info_left ul,#info_right ul
+{
+	list-style:none;
+}
