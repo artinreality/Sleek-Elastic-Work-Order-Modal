@@ -1,6 +1,6 @@
 body
 {
-	background:url(images/texture-paisley.png) repeat;
+	background:url(images/texture-darkplaster.jpg) repeat;
 	color:#fff;
 	font-family:Arial, sans-serif;
 	font-size:13px;
@@ -20,7 +20,7 @@ a
 
 div#container
 {
-	background:url(images/texture-paisley_light.jpg) repeat;
+	background:url(images/texture-medplaster.jpg) repeat;
 	border-bottom:1px solid #989898;
         border-right: 1px solid #444;
         border-left: 1px solid #444;
@@ -36,6 +36,7 @@ div#container
 {
 	background:#141414;
 	border-top:1px solid #710606;
+        border-bottom:1px solid #333;
 	clear:both; /* Why is this here? -CV */
 	height:34px;
 	width:100%;
