@@ -1,0 +1,10 @@
+/* TEAM */
+	Developer/Designer: Chris Vogt
+	Twitter: @artinreality
+	From:Tempe, Arizona
+
+/* SITE */
+	Last update:8/25/2011
+	Language:English 
+	Doctype:XHTML 1.0 Strict
+	IDE:Netbeans

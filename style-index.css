@@ -1,0 +1,102 @@
+/* 
+    Document   : style-index
+    Created on : Aug 26, 2011, 8:31:56 PM
+    Author     : Chris Vogt
+    Description:
+        Stylesheet for the gh-pages preview page.
+*/
+
+/* 
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+    
+body {
+    background: url(images/texture-background.jpg) repeat;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 87.5%
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #999;
+}
+
+div#main {
+    width: 656px;
+    height: 406px;
+    background: url(images/panel-main.png) no-repeat;
+    position: absolute;
+    top:50%;
+    margin-top: -203px;
+    left: 50%;
+    margin-left: -328px;
+}
+
+div#content {
+    width: 410px;
+    height: 366px;
+    position: absolute;
+    top: 50%;
+    margin-top: -183px;
+    left: 50%;
+    margin-left: -205px
+}
+
+#content #button {
+    background: url(images/sprite-button.png) 0 -100px no-repeat;
+    display: block;
+    width:324px;
+    height: 100px;
+    margin: 32px 43px 0 43px;
+}
+
+    #content #button:hover {
+        background: url(images/sprite-button.png) 0 0 no-repeat;
+    }
+
+    #button span {
+        display: block;
+        text-align: center;
+        height: 100%;
+        line-height: 104px;
+        font-family: Garamond;
+        font-size: 1.429em;
+        text-decoration: none;
+        color: #f3cb8d;
+    }
+    
+    #button span:hover {
+        color: #fefefe;
+    }
+    
+#content #options {
+    width: 324px;
+    margin: 0 43px 32px 43px;
+    overflow: hidden;
+    font-size: .857em;
+    text-decoration: underline;
+}
+
+    #options li {
+        list-style: none;
+        float: left;
+        text-align: center;
+        width: 33%;
+    }
+
+#content p {
+    clear: left;
+    text-align: justify;
+    line-height: 1.25em;
+}

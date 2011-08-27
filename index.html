@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<!--             888    d8b                                   888 d8b 888             
+                 888    Y8P                                   888 Y8P 888             
+                 888                                          888     888             
+ 8888b.  888d888 888888 888 88888b.  888d888 .d88b.   8888b.  888 888 888888 888  888 
+    "88b 888P"   888    888 888 "88b 888P"  d8P  Y8b     "88b 888 888 888    888  888 
+.d888888 888     888    888 888  888 888    88888888 .d888888 888 888 888    888  888 
+888  888 888     Y88b.  888 888  888 888    Y8b.     888  888 888 888 Y88b.  Y88b 888 
+"Y888888 888      "Y888 888 888  888 888     "Y8888  "Y888888 888 888  "Y888  "Y88888 
+                                                                                  888 
+                                                                             Y8b88-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <title>Modal Display Design Preview</title>
+
+        <link rel="author" href="humans.txt" />
+
+        <link type="text/css" href="style-index.css" rel="Stylesheet" />
+        <link type="text/css" href="css/ui-darkness/jquery-ui-1.8.13.custom.css" rel="Stylesheet" />
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+        <script type="text/javascript">
+
+            // increase the default animation speed to exaggerate the effect
+            $.fx.speeds._default = 1400;
+            $(function() {
+                $( "#dialog" ).dialog({
+                    autoOpen: false,
+                    show: "scale",
+                    hide: "fade",
+                    width: 980,
+                    height: 750,
+                    minWidth: 825,
+                    title: "Sleek Elastic Work Order Modal"
+                });
+	 
+                $( "#button" ).click(function() {
+                    $( "#dialog" ).dialog( "open" ).load('www.google.com');
+                    return false;
+                });
+					
+            });
+		
+        </script>
+
+    </head>
+
+    <body>
+
+        <a href="https://github.com/artinreality/Sleek-Elastic-Work-Order-Modal" title=="Sleek Elastic Work Order Modal by Art In Reality, LLC on GitHub"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+        
+        <div id="main">
+
+            <div id="content">
+
+                <a href="#" id="button" title="Click Here To View">
+                    <span>Click Here To View</span>
+                </a>
+
+                <ul id="options">
+                    <li><a href="https://raw.github.com/artinreality/Sleek-Elastic-Work-Order-Modal/gh-pages/index.html" title="View HTML">View HTML</a></li>
+                    <li><a href="https://raw.github.com/artinreality/Sleek-Elastic-Work-Order-Modal/master/screen.css" title="View CSS">View CSS</a></li>
+                    <li><a href="http://github.com/artinreality/Sleek-Elastic-Work-Order-Modal/zipball/master" title="Download">Download ZIP</a></li>
+                </ul>
+
+                <p>
+                    This elastic modal design requires a minimum width of 750px, it's content container will expand up to 1000px wide to accommodate a wide range of screen sizes from 1024x768 to 1920x1080 and up.
+                </p>
+
+                <!-- Hidden Dialog Modal -->
+                <div id="dialog" title="Basic dialog"> 
+                    <iframe src="details.html" width="100%" height="100%">
+                        <p>Error loading inline frame in jQuery UI dialog.</p>
+                    </iframe>
+                </div> 
+
+            </div>
+
+        </div> 
+
+        <script type="text/javascript" charset="utf-8">
+            var is_ssl = ("https:" == document.location.protocol);
+            var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+            document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+
+        <script type="text/javascript" charset="utf-8">
+            var feedback_widget_options = {};
+            feedback_widget_options.display = "overlay";  
+            feedback_widget_options.company = "artinreality";
+            feedback_widget_options.placement = "left";
+            feedback_widget_options.color = "#0066FF";
+            feedback_widget_options.style = "problem";
+            var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+        </script>
+    </body>
+
+</html>
