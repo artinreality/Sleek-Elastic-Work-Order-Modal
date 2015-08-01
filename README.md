@@ -2,7 +2,7 @@
 
 Work order modal HTML template. Uses jQuery, jQuery UI, and the jQuery UI Darkness theme.
 
-[View Online Demo](http://chrisvogt.github.io/Sleek-Elastic-Work-Order-Modal)
+[View Online Demo](http://www.artinreality.com/work-order-modal/)
 
 ### Screenshots
 
